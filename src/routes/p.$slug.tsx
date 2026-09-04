@@ -149,7 +149,6 @@ function PublicProduct() {
 
   return (
     <div className="flex min-h-screen flex-col bg-background lg:h-screen lg:overflow-hidden">
-      <SiteHeader />
       {/* Thin header */}
       <header className="flex h-14 shrink-0 items-center gap-3 border-b border-border px-4 sm:px-6">
         <Link
