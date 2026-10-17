@@ -1,29 +1,34 @@
-# Welcome to your Lovable project
+# Nordveka
 
-This project was built with [Lovable](https://lovable.dev).
+Interactive furniture product catalog and administration prototype built with React, TypeScript and TanStack Start.
 
-## Build with Lovable
+## Features
 
-Open your project in the [Lovable editor](https://lovable.dev) and keep building.
+- Product showcase, category browsing and product detail pages
+- Product, category and reusable component management
+- Component variants, technical specifications and document references
+- Visual component hotspots on product images
+- QR codes and product sharing
 
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: connect the project to GitHub and every change made in Lovable is committed straight to your repository.
-- **Full ownership**: this code is yours. Push to your repository and your changes sync back into Lovable, ready for your next prompt.
+## Scope
+
+This is a prototype. Catalog data is stored in browser localStorage and initialized from demo data. The administration UI does not implement production authentication or a persistent backend. Changes are local to the current browser.
 
 ## Development
 
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
+Install Node.js compatible with the Vite version in package.json and Bun. Then run:
 
 ```sh
-git clone <this-repository-url>
-cd <repository-name>
-npm i
-npm run dev
+bun install
+bun run dev
 ```
 
-## Built with
+Other commands: `bun run build`, `bun run preview`, `bun run lint`.
 
-- TanStack Start
-- TypeScript
-- React
-- Tailwind CSS
+## Stack
+
+React, TypeScript, TanStack Start/Router, Tailwind CSS, shadcn/ui and QRCode.
+
+## Build integration
+
+The existing `@lovable.dev/vite-tanstack-config` build wrapper is retained. Removing it requires a separately validated migration of Vite, SSR and deployment configuration. This cleanup removes template branding and editor-specific error hooks; it does not claim to disconnect an external account integration.
